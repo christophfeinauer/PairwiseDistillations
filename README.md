@@ -12,6 +12,7 @@ Feinauer, Christoph, Barthelemy Meynard-Piganeau, and Carlo Lucibello.
 - Julia version 1.6 or higher
 - Conda 4.11 or higher
 - Git LFS
+
 - Code assumes at various places that a GPU is present
 
 ## Setup
@@ -28,6 +29,7 @@ on the shell.
 
 Then, execute
 
+
 ```bash
 $ git clone git@github.com:christophfeinauer/PairwiseDistillations.git && cd PairwiseDistillations
 ```
@@ -41,6 +43,7 @@ head ./data/YAP1_HUMAN_1_b0.5.a2m
 ```
 
 This should show you protein sequences. If not, something has gone wrong.
+
 
 ### Julia Environment
 
@@ -116,6 +119,7 @@ This creates several new files in the data directory:
 
 The following steps train the original models and create samples from them (except for EVMutation). The later scripts ignore as far as possible cases where original models are missing, so you can also train for example only ArDCA models or just a subset of the VAE models and go on to the later stages.
 
+
 #### ArDCA
 
 In the repostitory directory, run
@@ -186,3 +190,4 @@ The naming scheme is cumulative, so for example the evluation file called `YAP1_
 
 
 Independent models have `IND` instead of `PW` in the name. Note also that original `ArDCA` and `VAE` models report the log probability and not the eneriges. Extracted models and EVMutation models on the other hand report the energy. When comparing the evaluations of these model types the sign of one has to be switched.
+=======
