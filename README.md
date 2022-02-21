@@ -80,7 +80,7 @@ to pull the `plmc` submodule. Then, enter the subdirectory of plmc and build it 
 $ pushd evmutation/plmc/ && make all && popd
 ```
 
-*NOTE*: The `plmc` code also allows to compile with parallelization enabled (see readme in the subdirectory). This can be achieved by substiting `make all` in the command above with `make all-openmp`. However, the parallel implementation crashed our machine (not just the program, but the complete server) repeatedly. We did not invest any time in debugging it and just used the single-core version. 
+*NOTE*: The `plmc` code also allows to compile with parallelization enabled (see readme in the subdirectory). This can be achieved by substituting `make all` in the command above with `make all-openmp`. However, the parallel implementation crashed our machine (not just the program, but the complete server) repeatedly. We did not invest any time in debugging it and just used the single-core version. 
 
 
 ## Reproducing Results
