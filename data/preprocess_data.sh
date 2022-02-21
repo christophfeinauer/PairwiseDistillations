@@ -47,3 +47,6 @@ for fasta_path in $(ls data/*a2m); do
     python data/create_exp_alignment.py --fasta_path "${fasta_path}" --csv_file="${csv_path_match}" --out_file="${out_file}"
 
 done
+
+# create hamming distance data
+julia --project=. ./data/hamming_distances.jl ./data
