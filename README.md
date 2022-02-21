@@ -42,10 +42,6 @@ head ./data/YAP1_HUMAN_1_b0.5.a2m
 
 This should show you protein sequences. If not, something has gone wrong.
 
-### Get Data
-
-In the repository directory,
-
 ### Julia Environment
 
 In the repository directory,  run 
