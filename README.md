@@ -1,6 +1,8 @@
 # Interpretable Pairwise Distillations for Generative Protein Sequence Models
 
-This code accompanies _Interpretable Pairwise Distillations for Generative Protein Sequence Models_ by Feinauer C; Meynard-Piganeau, B; Lucibello C [bioRxiv](https://www.biorxiv.org/content/10.1101/2021.10.14.464358v1).
+This code accompanies _Interpretable Pairwise Distillations for Generative Protein Sequence Models_ by Feinauer C; Meynard-Piganeau, B; Lucibello C. 
+
+[Link to bioRxiv](https://www.biorxiv.org/content/10.1101/2021.10.14.464358v1).
 
 
 ## Requirements
@@ -67,7 +69,11 @@ pushd evmutation/plmc/ && make all && popd
 The complete pipeline is 
 
 ```
-Preprocess Data -> Train Original Model and Create Samples -> Extract Independent and Paiwise Models using Samples -> Evaluate (calculate energies) -> Plot
+Preprocess Data -> 
+Train Original Model and Create Samples -> 
+Extract Independent and Paiwise Models using Samples -> 
+Evaluate (calculate energies) -> 
+Plot
 ```
 
 There is a bash script called `run_all.sh` in the repository directory which contains the complete pipeline. However, due to the complex nature of the pipeline it is recommended to run the following commands one by one.
