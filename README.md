@@ -8,19 +8,43 @@ Feinauer, Christoph, Barthelemy Meynard-Piganeau, and Carlo Lucibello.
 
 ## Requirements
 
+- Linux (code has been tested on Ubuntu and Manjaro, not on anything else)
 - Julia version 1.6 or higher
 - Conda 4.11 or higher
+- Git LFS
 - Code assumes at various places that a GPU is present
 
 ## Setup
 
 ### Clone repository and enter the directory
 
-On the shell, execute
+Make sure `git-lfs` is installed by running
+
+```bash
+$ git lfs install --skip-repo
+```
+
+on the shell.
+
+Then, execute
 
 ```bash
 $ git clone git@github.com:christophfeinauer/PairwiseDistillations.git && cd PairwiseDistillations
 ```
+
+This downloads the necessary code files and the data. 
+
+Please make sure that the `git-lfs` objects were pulled correctly by executing in the repository directory
+
+```bash
+head ./data/YAP1_HUMAN_1_b0.5.a2m
+```
+
+This should show you protein sequences. If not, something has gone wrong.
+
+### Get Data
+
+In the repository directory,
 
 ### Julia Environment
 
@@ -79,6 +103,17 @@ The complete pipeline is
 There is a bash script called `run_all.sh` in the repository directory which contains the complete pipeline. However, due to the complex nature of the pipeline it is recommended to run the following commands one by one.
 
 ### Preprocessing Data
+
+In the repository directoy, run
+
+```bash
+./data/preprocess_data.sh
+```
+
+This creates several new files in the data directory:
+
+1. For every `.a2m` file, it creates a set of training and testing sequences (suffix `.train` and `.test`)
+2. For every test set, it calculated
 
 ### Train Original Models
 
