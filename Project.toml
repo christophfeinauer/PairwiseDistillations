@@ -2,6 +2,7 @@
 ArDCA = "fc7e833f-a3b9-439d-ae82-c6ad11a3e54b"
 ArgParse = "c7e460c6-2fb9-53a9-8c5b-16f535851c63"
 DCAUtils = "e41cd558-3099-4f6e-a65d-5336857e40aa"
+Distances = "b4f34e82-e78d-54a5-968a-f98e89d6e8f7"
 Distributed = "8ba89e20-285c-5b6f-9357-94700520ee1b"
 ExtractMacro = "f86d3d12-fd5b-522c-99e9-61577282a1e9"
 HDF5 = "f67ccb44-e63f-5c2f-98bd-6dc0ccc4ba2f"
