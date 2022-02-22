@@ -141,6 +141,7 @@ The code also creates samples from the `T`, `U` and `M` distribution. They are s
 
 Most of the VAE code comes from the [repository](https://github.com/xqding/PEVAE_Paper) accompanying the paper "Deciphering protein evolution and fitness landscapes with latent space models". A reduced and modified version is included directly as repository files here.
 
+
 In the repository directory, run
 
 ```bash
@@ -222,8 +223,8 @@ Please use these citations if you use this code. They will be updated as soon as
 
 Feinauer, Christoph, Barthelemy Meynard-Piganeau, and Carlo Lucibello. "Interpretable Pairwise Distillations for Generative Protein Sequence Models." bioRxiv (2021).
 
-
 ### Bibtex
+
 
 @article{feinauer2021interpretable,
   title={Interpretable Pairwise Distillations for Generative Protein Sequence Models},
@@ -232,4 +233,3 @@ Feinauer, Christoph, Barthelemy Meynard-Piganeau, and Carlo Lucibello. "Interpre
   year={2021},
   publisher={Cold Spring Harbor Laboratory}
 }
-
