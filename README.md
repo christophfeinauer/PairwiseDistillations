@@ -190,4 +190,13 @@ The naming scheme is cumulative, so for example the evluation file called `YAP1_
 
 
 Independent models have `IND` instead of `PW` in the name. Note also that original `ArDCA` and `VAE` models report the log probability and not the eneriges. Extracted models and EVMutation models on the other hand report the energy. When comparing the evaluations of these model types the sign of one has to be switched.
+
+
+## Contact Prediction
+
+The script for using extracted models for contact prediction can be found in `extracted/predict_contacts.sh`. Note that [hmmer](http://hmmer.org/) needs to be installed for this to work.
+
+## Plotting
+
+Plotting scripts can be found in `plots/`. 
 =======
