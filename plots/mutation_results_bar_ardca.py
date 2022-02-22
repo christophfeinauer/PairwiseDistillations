@@ -75,6 +75,9 @@ if __name__ == '__main__':
             continue
         path = os.path.join(dirname, filename)
 
+        if os.path.getsize(path) == 0:
+            continue
+
         # check which protein the file belongs to
         protein = filename.split("_")[0]
 

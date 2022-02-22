@@ -12,8 +12,8 @@ Feinauer, Christoph, Barthelemy Meynard-Piganeau, and Carlo Lucibello.
 - Julia version 1.6 or higher
 - Conda 4.11 or higher
 - Git LFS
-
 - Code assumes at various places that a GPU is present
+- If you want to reproduce the contact prediction results, [hmmer](http://hmmer.org/) needs to be installed.
 
 ## Setup
 
@@ -71,6 +71,8 @@ All subsequent instructions assume that you are in the correct environment.
 
 ### EVMutation
 
+The EVMutation code comes from the [plmc repostory](https://github.com/debbiemarkslab/plmc), which is used as a submodule here.
+
 In the repository directory, run
 
 ```bash
@@ -122,6 +124,8 @@ The following steps train the original models and create samples from them (exce
 
 #### ArDCA
 
+The ArDCA code comes from the [ArDCA repository](https://github.com/pagnani/ArDCA.jl). It is installed as a registered Julia package (see above).
+
 In the repostitory directory, run
 
 ```bash
@@ -134,6 +138,9 @@ The code also creates samples from the `T`, `U` and `M` distribution. They are s
 
 
 ### VAE
+
+Most of the VAE code comes from the [repository](https://github.com/xqding/PEVAE_Paper) accompanying the paper "Deciphering protein evolution and fitness landscapes with latent space models". A reduced and modified version is included directly as repository files here.
+
 
 In the repository directory, run
 
@@ -190,4 +197,39 @@ The naming scheme is cumulative, so for example the evluation file called `YAP1_
 
 
 Independent models have `IND` instead of `PW` in the name. Note also that original `ArDCA` and `VAE` models report the log probability and not the eneriges. Extracted models and EVMutation models on the other hand report the energy. When comparing the evaluations of these model types the sign of one has to be switched.
-=======
+
+
+## Contact Prediction
+
+The script for using extracted models for contact prediction can be found in `extracted/predict_contacts.sh`. Note that [hmmer](http://hmmer.org/) needs to be installed for this to work.
+
+## Plotting
+
+Plotting scripts can be found in `plots/`.
+
+## Credits
+
+This is a list of repositories from which some of the code in this repository has been taken. Please cite appropriately if you use code from this repository.
+
+- plmc (EVMutation): https://github.com/debbiemarkslab/plmc
+- ArDCA: https://github.com/pagnani/ArDCA.jl
+- VAE: https://github.com/xqding/PEVAE_Paper
+
+## Citation
+
+Please use these citations if you use this code. They will be updated as soon as the paper is accepted.
+
+### Text
+
+Feinauer, Christoph, Barthelemy Meynard-Piganeau, and Carlo Lucibello. "Interpretable Pairwise Distillations for Generative Protein Sequence Models." bioRxiv (2021).
+
+### Bibtex
+
+
+@article{feinauer2021interpretable,
+  title={Interpretable Pairwise Distillations for Generative Protein Sequence Models},
+  author={Feinauer, Christoph and Meynard-Piganeau, Barthelemy and Lucibello, Carlo},
+  journal={bioRxiv},
+  year={2021},
+  publisher={Cold Spring Harbor Laboratory}
+}
