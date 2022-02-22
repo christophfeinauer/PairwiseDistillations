@@ -12,8 +12,8 @@ Feinauer, Christoph, Barthelemy Meynard-Piganeau, and Carlo Lucibello.
 - Julia version 1.6 or higher
 - Conda 4.11 or higher
 - Git LFS
-
 - Code assumes at various places that a GPU is present
+- If you want to reproduce the contact prediction results, [hmmer](http://hmmer.org/) needs to be installed.
 
 ## Setup
 
@@ -198,5 +198,4 @@ The script for using extracted models for contact prediction can be found in `ex
 
 ## Plotting
 
-Plotting scripts can be found in `plots/`. 
-=======
+Plotting scripts can be found in `plots/`.
