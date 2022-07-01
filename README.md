@@ -1,10 +1,10 @@
 # Interpretable Pairwise Distillations for Generative Protein Sequence Models
 
-This code accompanies _Interpretable Pairwise Distillations for Generative Protein Sequence Models._
-Feinauer, Christoph, Barthelemy Meynard-Piganeau, and Carlo Lucibello. 
+Software accompanying _Feinauer, Christoph, Barthelemy Meynard-Piganeau, and Carlo Lucibello. "Interpretable pairwise distillations for generative protein sequence models." PLOS Computational Biology 18.6 (2022): e1010219_
 
-[Link to bioRxiv](https://www.biorxiv.org/content/10.1101/2021.10.14.464358v1).
+[Link to Paper](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010219)
 
+Please cite the paper if you use this code.
 
 ## Requirements
 
