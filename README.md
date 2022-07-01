@@ -4,7 +4,7 @@ Software accompanying _Feinauer, Christoph, Barthelemy Meynard-Piganeau, and Car
 
 [Link to Paper](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010219)
 
-Please cite the paper if you use this code.
+Please cite the paper if you use this code (see below).
 
 ## Requirements
 
@@ -221,15 +221,18 @@ Please use these citations if you use this code. They will be updated as soon as
 
 ### Text
 
-Feinauer, Christoph, Barthelemy Meynard-Piganeau, and Carlo Lucibello. "Interpretable Pairwise Distillations for Generative Protein Sequence Models." bioRxiv (2021).
+Feinauer, Christoph, Barthelemy Meynard-Piganeau, and Carlo Lucibello. "Interpretable pairwise distillations for generative protein sequence models." PLOS Computational Biology 18.6 (2022): e1010219.
 
 ### Bibtex
 
-
-@article{feinauer2021interpretable,
-  title={Interpretable Pairwise Distillations for Generative Protein Sequence Models},
+@article{feinauer2022interpretable,
+  title={Interpretable pairwise distillations for generative protein sequence models},
   author={Feinauer, Christoph and Meynard-Piganeau, Barthelemy and Lucibello, Carlo},
-  journal={bioRxiv},
-  year={2021},
-  publisher={Cold Spring Harbor Laboratory}
+  journal={PLOS Computational Biology},
+  volume={18},
+  number={6},
+  pages={e1010219},
+  year={2022},
+  publisher={Public Library of Science San Francisco, CA USA}
 }
+
