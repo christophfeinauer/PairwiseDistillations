@@ -1,6 +1,3 @@
-# Original Author: Xinqiang Ding (xqding@umich.edu)
-
-
 import numpy as np
 import torch
 import torch.optim as optim
