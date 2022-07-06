@@ -1,5 +1,6 @@
-__author__ = "Xinqiang Ding <xqding@umich.edu>"
-__date__ = "2017/10/16 02:50:08"
+'''
+Code adapted - originally authored by Xinqiang Ding <xqding@umich.edu>"
+'''
 
 import numpy as np
 import torch
