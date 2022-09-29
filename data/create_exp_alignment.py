@@ -74,7 +74,9 @@ def create_mutated_sequences(wt_sequence, wt_key, csv_file, position_map, experi
 
             mutations_added[data[0]] = [ind_val, pw_val, exp_val]
 
-            for mut in data[0].split(","):
+            mutated_seq = wt_sequence
+
+            for mut in data[0].split(":"):
 
                 aa1 = mut[0]
                 aa2 = mut[-1]
@@ -85,10 +87,11 @@ def create_mutated_sequences(wt_sequence, wt_key, csv_file, position_map, experi
 
                 alignment_ind = position_map[uniprot_pos]
 
-                assert wt_sequence[alignment_ind] == aa1
+                assert mutated_seq[alignment_ind] == aa1
+
+                mutated_seq = mutated_seq[:alignment_ind] + aa2 + mutated_seq[alignment_ind + 1:]
 
             # assemble mutated sequence and print
-            mutated_seq = wt_sequence[:alignment_ind] + aa2 + wt_sequence[alignment_ind + 1:]
             mutated_key = '/'.join([wt_key, mut, ind_val, pw_val, exp_val])
             print(mutated_key, file=ofid)
             print(mutated_seq, file=ofid)
