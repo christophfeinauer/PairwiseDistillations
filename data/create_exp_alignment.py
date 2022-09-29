@@ -1,6 +1,5 @@
 import argparse
 
-
 def read_fasta_info(fasta_path):
 
     position_map = {}
@@ -88,11 +87,11 @@ def create_mutated_sequences(wt_sequence, wt_key, csv_file, position_map, experi
 
                 assert wt_sequence[alignment_ind] == aa1
 
-                # assemble mutated sequence and print
-                mutated_seq = wt_sequence[:alignment_ind] + aa2 + wt_sequence[alignment_ind + 1:]
-                mutated_key = '/'.join([wt_key, mut, ind_val, pw_val, exp_val])
-                print(mutated_key, file=ofid)
-                print(mutated_seq, file=ofid)
+            # assemble mutated sequence and print
+            mutated_seq = wt_sequence[:alignment_ind] + aa2 + wt_sequence[alignment_ind + 1:]
+            mutated_key = '/'.join([wt_key, mut, ind_val, pw_val, exp_val])
+            print(mutated_key, file=ofid)
+            print(mutated_seq, file=ofid)
 
 
 if __name__ == "__main__":
